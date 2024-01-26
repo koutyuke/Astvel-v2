@@ -1,5 +1,5 @@
 {
-  "name": "astvel - v2",
+  "name": "astvel-v2",
   "private": true,
   "scripts": {
     "build": "turbo build",
