@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "panda cssgen --outfile ./styled-system/styles.css -w",
-    "build": "panda cssgen --outfile ./styled-system/styles.css",
+    "build": "panda codegen && panda cssgen --outfile ./styled-system/styles.css",
     "fmt": "biome format ./src/**/*.{ts,tsx} --no-errors-on-unmatched",
     "fmt:fix": "biome format --write ./src/**/*.{ts,tsx} --no-errors-on-unmatched",
     "lint": "biome lint ./src/**/*.{ts,tsx} --error-on-warnings --no-errors-on-unmatched",
