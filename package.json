@@ -2,15 +2,25 @@
   "name": "astvel-v2",
   "private": true,
   "scripts": {
+    "cli": "act --container-architecture linux/amd64 -e .github/event.json",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "fmt": "turbo fmt",
+    "test": "turbo test",
+    "all": "pnpm --filter @astvel/*",
+    "web": "pnpm --filter web",
+    "core": "pnpm --filter @astvel/core",
+    "biome": "pnpm --filter @astvel/biome",
+    "tsconfig": "pnpm --filter @astvel/tsconfig",
+    "pandacss": "pnpm --filter @astvel/pandacss",
+    "postcss": "pnpm --filter @astvel/postcss",
+    "design-token": "pnpm --filter @astvel/design-token"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "prettier": "^3.1.1",
+    "@astvel/tsconfig": "workspace:*",
+    "@biomejs/biome": "1.5.3",
+    "tsup": "^8.0.1",
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.9.0",

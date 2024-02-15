@@ -1,0 +1,13 @@
+{
+  "name": "@astvel/tsconfig",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@tsconfig/create-react-app": "^2.0.2",
+    "@tsconfig/next": "^2.0.1",
+    "@tsconfig/strictest": "^2.0.2"
+  }
+}

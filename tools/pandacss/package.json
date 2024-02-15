@@ -1,0 +1,23 @@
+{
+  "name": "@astvel/pandacss",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "pnpm build --watch",
+    "build": "tsup src/index.ts --clean --dts --external @pandacss/dev",
+    "fmt": "biome format ./src/**/*.{ts,tsx} --no-errors-on-unmatched",
+    "fmt:fix": "biome format --write ./src/**/*.{ts,tsx} --no-errors-on-unmatched",
+    "lint": "biome lint ./src/**/*.{ts,tsx} --error-on-warnings --no-errors-on-unmatched",
+    "lint:fix": "biome lint --apply ./src/**/*.{ts,tsx}"
+  },
+  "devDependencies": {
+    "@astvel/postcss": "workspace:*",
+    "@astvel/tsconfig": "workspace:*",
+    "@astvel/design-token": "workspace:*",
+    "@pandacss/dev": "^0.29.1",
+    "@radix-ui/colors": "^3.0.0",
+    "pandacss-preset-radix-colors": "^0.2.0"
+  }
+}

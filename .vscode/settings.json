@@ -1,4 +1,10 @@
 {
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
   "commit-message-editor.dynamicTemplate": [
     "{type}{scope}{description}",
     "",
@@ -161,9 +167,14 @@
     }
   ],
   "commit-message-editor.view.defaultView": "form",
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ]
+  "deno.enablePaths": [
+    "supabase/functions"
+  ],
+  "deno.lint": true,
+  "deno.unstable": true,
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome"
 }

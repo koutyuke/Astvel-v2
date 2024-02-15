@@ -1,0 +1,11 @@
+{
+  "extends": "@astvel/tsconfig/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+  },
+  "include": ["**/*.ts",],
+  "exclude": ["node_modules", "dist"]
+}

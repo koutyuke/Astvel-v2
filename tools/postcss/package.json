@@ -1,0 +1,12 @@
+{
+  "name": "@astvel/postcss",
+  "version": "1.0.0",
+  "private": true,
+  "files": ["./base.cjs"],
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "postcss-import": "^16.0.0",
+    "postcss-simple-vars": "^7.0.1"
+  }
+}
