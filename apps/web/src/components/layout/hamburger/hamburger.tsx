@@ -63,19 +63,27 @@ const Hamburger: FC = () => {
 						left: 8,
 						borderRadius: "full",
 						borderWidth: 2,
-						borderColor: "gray.8",
+						borderColor: "gray.7",
 						display: "flex",
 						justifyContent: "center",
 						alignItems: "center",
+						transition: "all 0.2s",
 						h: 8,
 						w: 8,
+						_hover: {
+							borderColor: "green.8",
+							"&> *": {
+								color: "green.8",
+							},
+						},
 					})}
 					onClick={() => setOpen(false)}
 				>
 					<CloseIcon
 						size={24}
 						className={css({
-							stroke: "gray.8",
+							color: "gray.7",
+							transition: "all 0.2s",
 						})}
 					/>
 				</button>
