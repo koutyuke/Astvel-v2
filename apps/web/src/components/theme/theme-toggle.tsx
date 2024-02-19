@@ -71,7 +71,7 @@ const ThemeToggle: FC = () => {
 				width: "90px",
 				bg: "gray.2",
 				borderRadius: "full",
-				borderWidth: "1px",
+				borderWidth: 1,
 				borderColor: "gray.7",
 				paddingX: "4px",
 				display: "flex",

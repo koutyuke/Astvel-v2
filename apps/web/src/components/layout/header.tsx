@@ -1,10 +1,10 @@
+import { Auth } from "@/features/auth/components";
 import NextLink from "next/link";
 import { FC } from "react";
 import Icon from "#core/assets/brand/icon.svg";
 import Logo from "#core/assets/brand/logo.svg";
 import { Link } from "#core/src/components/link";
 import { css } from "#styles/css";
-import { Button } from "../button/button";
 import { ThemeToggle } from "../theme/theme-toggle";
 import { Hamburger } from "./hamburger";
 
@@ -89,10 +89,7 @@ const Header: FC = () => {
 				>
 					<ThemeToggle />
 				</span>
-				<Button color="green" variant="outline">
-					Sign in
-				</Button>
-
+				<Auth />
 				<span
 					className={css({
 						tablet: {

@@ -1,6 +1,8 @@
 import { Footer, Header } from "@/components/layout";
 import { ThemeProvider } from "@/components/theme/provider";
+import { AuthProvider } from "@/features/auth/components";
 import { fontVariables } from "@/styles/fonts";
+import { Provider as JotaiProvider } from "jotai";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { CoreStyleProvider } from "#core/src/context/styleProvider";
@@ -34,16 +36,20 @@ const RootLayout = ({
 		>
 			<ThemeProvider>
 				<CoreStyleProvider>
-					<Header />
-					<main
-						className={css({
-							minHeight: "100%",
-							width: "100%",
-						})}
-					>
-						{children}
-					</main>
-					<Footer />
+					<JotaiProvider>
+						<AuthProvider>
+							<Header />
+							<main
+								className={css({
+									minHeight: "100svh",
+									width: "100svw",
+								})}
+							>
+								{children}
+							</main>
+							<Footer />
+						</AuthProvider>
+					</JotaiProvider>
 				</CoreStyleProvider>
 			</ThemeProvider>
 		</body>

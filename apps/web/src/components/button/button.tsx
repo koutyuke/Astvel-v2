@@ -70,9 +70,7 @@ const Style = cva({
 				"&>span": {
 					display: "inline-block",
 					h: 5,
-					maxHeight: "90%",
 					w: 5,
-					maxWidth: "4/5",
 					aspectRatio: "1/1",
 					borderWidth: 2,
 					borderStyle: "solid",
