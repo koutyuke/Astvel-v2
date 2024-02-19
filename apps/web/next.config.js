@@ -14,5 +14,11 @@ module.exports = {
   },
   images: {
     disableStaticImages: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.discordapp.com",
+      },
+    ],
   },
 };
